@@ -1,0 +1,815 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav{
+    height: 90px;
+    width: 100%;
+    background-color: yellow;
+    border: 1px solid black;
+    display: flex;
+
+}
+.nav-part1{
+    height: 100%;
+    flex: 0.4;
+    background-color: palegreen;
+    
+
+}
+.nav-part2{
+    height: 100%;
+    flex: 1;
+    background-color: plum;
+
+
+}
+.nav-part3{
+    height: 100%;
+    flex: 0.3;
+    background-color: palegreen;
+
+}
+.hero{
+    height: 60vh;
+    width: 100%;
+    background-color: red;
+    border: 1px solid black;
+    display: flex;
+    gap: 10px;
+    padding: 10px 10px 10px 10px;
+}
+.hero-part1{
+    height: 100%;
+    flex: 0.2;
+    background-color: aqua;
+
+}
+.hero-part2{
+    height: 100%;
+    flex: 1;
+    background-color: antiquewhite;
+
+}
+.hero-part3{
+    height: 100%;
+    flex: 0.2;
+    background-color: aqua;
+
+}
+.service{
+    height: 50vh;
+    width: 100%;
+    background-color: green;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.service-part1{
+    height: 100%;
+    flex: 0.3;
+    background-color: palegreen;
+
+}
+.service-part2{
+    height: 100%;
+    flex: 1;
+    background-color: plum;
+
+}
+.projects{
+    height: 50vh;
+    width: 100%;
+    background-color: blueviolet;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.project-part1{
+    height: 100%;
+    flex: 0.3;
+    background-color: antiquewhite;
+
+}
+.project-part2{
+    height: 100%;
+    flex: 1;
+    background-color: aqua;
+
+}
+.rating{
+    height: 30vh;
+    width: 100%;
+    background-color: palevioletred;
+    border: 1px solid black;
+    display: flex;
+    gap: 10px;
+    padding: 10px 10px 10px 10px;
+
+}
+.rating-part1{
+    height: 100%;
+    flex: 1;
+    background-color: plum;
+
+}
+.rating-part2{
+    height: 100%;
+    flex: 1;
+    background-color: antiquewhite;
+
+}
+.rating-part3{
+    height: 100%;
+    flex: 1;
+    background: green;
+
+}
+.rating-part4{
+    height: 100%;
+    flex: 1;
+    background-color: ghostwhite;
+
+}
+.footer{
+    height: 40vh;
+    width: 100%;
+    background-color: red;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.footer-part1{
+    height: 100%;
+    flex: 1;
+    background-color: lavender;
+
+}
+.footer-part2{
+    height: 100%;
+    flex: 0.2;
+    background-color: peru;
+
+}
+     */
+
+  
+
+
+
+
+
+/* =====================
+   COMMON CSS
+===================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #100e0c;
+    color: white;
+}
+
+
+/* =====================
+   NAVBAR
+===================== */
+
+.nav {
+    height: 65px;
+    width: 100%;
+    background-color: #100e0c;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8%;
+    border-bottom: 1px solid goldenrod;
+}
+
+.nav-logo {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-logo img {
+    width: 38px;
+    height: 55px;
+    object-fit: contain;
+}
+
+.logo-text h2 {
+    font-family: Georgia, serif;
+    font-size: 17px;
+    color: white;
+}
+
+.logo-text p {
+    font-size: 8px;
+    color: #c7bba9;
+}
+
+.nav-link {
+    width: 55%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-link a {
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.nav-btn {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-btn button {
+    background-color: goldenrod;
+    color: white;
+    border: none;
+    padding: 11px 20px;
+    font-size: 10px;
+    font-weight: 600;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.nav-btn i {
+    font-size: 18px;
+    color: goldenrod;
+}
+
+
+/* =====================
+   HERO SECTION
+===================== */
+
+.hero {
+    height: 465px;
+    width: 100%;
+
+    background-image:
+        linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.68),
+            rgba(0, 0, 0, 0.08)
+        ),
+        url("./temple-bg.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    padding: 0 10% 15px;
+}
+
+.hero1 {
+    height: 75%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* LEFT AND RIGHT ARROWS */
+
+.btn-left,
+.btn-right {
+    height: 40px;
+    width: 40px;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+/* HERO TEXT */
+
+.btn-info {
+    width: 80%;
+    padding-left: 10px;
+}
+
+.btn-info h1 {
+    font-family: Georgia, serif;
+    font-size: 42px;
+    line-height: 1.15;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.btn-info h1 span {
+    color: goldenrod;
+}
+
+.btn-info p {
+    width: 390px;
+    color: #e1dcd5;
+    font-size: 13px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+
+/* HERO BUTTONS */
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.hero-buttons button {
+    padding: 11px 18px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.explore-btn {
+    background-color: goldenrod;
+    border: 1px solid goldenrod;
+    color: #17110b;
+}
+
+.video-btn {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.video-btn i {
+    font-size: 15px;
+}
+
+
+/* HERO FEATURE BOXES */
+
+.hero2 {
+    width: 100%;
+    height: 82px;
+    background-color: rgba(15, 12, 10, 0.94);
+    border: 1px solid goldenrod;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 15px;
+}
+
+.hero-box {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 8px 15px;
+    border-right: 1px solid #51402c;
+}
+
+.hero-box h3 {
+    font-family: Georgia, serif;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.hero-box p {
+    font-size: 9px;
+    color: #c9c0b5;
+}
+
+.feature-icon {
+    font-size: 25px;
+    color: goldenrod;
+}
+
+
+/* HERO DOTS */
+
+.hero-dots {
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 9px;
+    padding-top: 8px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.active-dot {
+    background-color: goldenrod;
+}
+
+
+/* =====================
+   ABOUT SECTION
+===================== */
+
+.about {
+    height: 300px;
+    width: 100%;
+    background-color: #f8f1e8;
+    color: #201b16;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 12%;
+    gap: 55px;
+}
+
+.about1 {
+    width: 48%;
+}
+
+.section-label {
+    font-size: 11px;
+    font-weight: 700;
+    color: #554b40;
+    margin-bottom: 10px;
+}
+
+.section-label span {
+    color: goldenrod;
+    margin-left: 8px;
+}
+
+.about1 h2 {
+    font-family: Georgia, serif;
+    font-size: 29px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.about1 h2 span {
+    color: #a88142;
+}
+
+.about-description {
+    color: #70665d;
+    font-size: 12px;
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+
+/* ABOUT DETAILS */
+
+.about-details {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.detail-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 12px;
+    border-right: 1px solid #d5c9b9;
+}
+
+.detail-box i {
+    font-size: 23px;
+    color: #a88142;
+}
+
+.detail-box h4 {
+    font-size: 10px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.detail-box p {
+    font-size: 10px;
+    color: #62584f;
+}
+
+
+/* ABOUT BUTTON */
+
+.history-btn {
+    background-color: #ac8142;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 20px;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.history-btn i {
+    margin-left: 15px;
+}
+
+
+/* ABOUT IMAGE */
+
+.about2 {
+    width: 48%;
+    height: 255px;
+    border-radius: 12px;
+}
+
+.about2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* =====================
+   GALLERY SECTION
+===================== */
+
+.gallery {
+    height: 280px;
+    width: 100%;
+    background-color: #100e0c;
+    padding-top: 22px;
+}
+
+
+/* GALLERY HEADING */
+
+.gallery1 {
+    height: 65px;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.gallery1 p {
+    color: goldenrod;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.gallery1 h2 {
+    font-family: Georgia, serif;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.gallery1 h2 span {
+    color: goldenrod;
+}
+
+
+/* GALLERY IMAGES */
+
+.gallery2 {
+    height: 200px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 9px;
+    padding-bottom: 18px;
+}
+
+.gallery2 img {
+    width: 16%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #51402c;
+}
+
+
+/* =====================
+   STATISTICS SECTION
+===================== */
+
+.gallery3 {
+    height: 85px;
+    width: 100%;
+    background-color: #080706;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px 10%;
+    border-bottom: 1px solid #493a2b;
+}
+
+.stat-box {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 8px;
+    border-right: 1px solid #514333;
+}
+
+.stat-box i {
+    font-size: 25px;
+    color: goldenrod;
+}
+
+.stat-box h2 {
+    font-family: Georgia, serif;
+    font-size: 23px;
+    margin-bottom: 3px;
+}
+
+.stat-box p {
+    font-size: 10px;
+    color: #c6bdb2;
+}
+
+
+/* =====================
+   FOOTER SECTION
+===================== */
+
+.footer {
+    height: 175px;
+    width: 100%;
+    background-color: #100e0c;
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 8%;
+    gap: 30px;
+}
+
+.footer > div {
+    flex: 1;
+}
+
+
+/* FOOTER LOGO */
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-logo i {
+    font-size: 35px;
+    color: goldenrod;
+}
+
+.footer-logo h3 {
+    font-family: Georgia, serif;
+    font-size: 17px;
+    color: white;
+}
+
+.footer1 p {
+    font-size: 10px;
+    color: #c5bdb4;
+    margin-bottom: 8px;
+}
+
+
+/* SOCIAL ICONS */
+
+.social-icons {
+    display: flex;
+    gap: 17px;
+    margin-top: 10px;
+}
+
+.social-icons i {
+    font-size: 14px;
+    color: white;
+}
+
+
+/* FOOTER HEADINGS */
+
+.footer h4 {
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: white;
+    margin-bottom: 12px;
+}
+
+
+/* FOOTER LINKS */
+
+.footer2 a,
+.footer3 a {
+    display: block;
+    text-decoration: none;
+    color: #c5bdb4;
+    font-size: 10px;
+    margin-bottom: 6px;
+}
+
+
+/* CONTACT */
+
+.footer4 p {
+    font-size: 10px;
+    color: #c5bdb4;
+    margin-bottom: 9px;
+}
+
+.footer4 i {
+    color: goldenrod;
+    margin-right: 7px;
+}
+
+
+/* NEWSLETTER */
+
+.footer5 p {
+    font-size: 10px;
+    color: #c5bdb4;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.newsletter {
+    display: flex;
+    width: 100%;
+}
+
+.newsletter input {
+    width: 65%;
+    padding: 9px;
+    background-color: transparent;
+    border: 1px solid #574a3c;
+    color: white;
+    font-size: 10px;
+}
+
+.newsletter button {
+    width: 35%;
+    padding: 9px 5px;
+    background-color: goldenrod;
+    color: white;
+    border: none;
+    font-size: 9px;
+    font-weight: 600;
+}
+
+
+/* =====================
+   COPYRIGHT
+===================== */
+
+.copyright {
+    height: 40px;
+    width: 100%;
+    background-color: #100e0c;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 8%;
+    border-top: 1px solid #493a2b;
+}
+
+.copyright p,
+.copyright a {
+    color: #aaa198;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+.copyright span {
+    color: #74695d;
+    margin: 0 12px;
+}
