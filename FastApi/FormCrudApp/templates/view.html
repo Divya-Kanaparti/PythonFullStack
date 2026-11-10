@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Page</title>
+    <style>
+        td,th{
+            padding: 8px;
+            margin: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>STudents data is:</h1>
+    <table border="1" style="border-collapse: collapse;">
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>city</th>
+            <th>marks</th>
+            <th>age</th>
+            <th colspan="3">action</th>
+        </tr>
+
+        {%for s in students%}
+
+            <tr>
+                <td>{{s[0]}}</td>
+                <td>{{s[1]}}</td>
+                <td>{{s[2]}}</td>
+                <td>{{s[3]}}</td>
+                <td>{{s[4]}}</td>
+                <td><a href="/view{{s[0]}}">View</a></td>
+                <td><a href="/edit/{{s[0]}}">edit</a></td>
+                <td><a href="/delete/{{s[0]}}">Delete</a></td>
+            </tr>
+
+
+        {%endfor%}
+
+
+    </table>
+
+    <br><br>
+    <a href="/register">Add student</a>
+</body>
+</html>
