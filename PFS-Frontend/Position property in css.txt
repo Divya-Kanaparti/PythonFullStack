@@ -1,0 +1,17 @@
+Position property in css:
+1)absolute
+2)fixed
+3)relative
+4)static
+5)sticky
+->By default the position of the continer is static.
+->To make the container stay in same position or standard position you can make use of fixed
+->Fixed contains 4 values those are nothing but top,right,left,bottom for the movement of the container
+Fixed is nothing but the container will be fixed in the same position and other containers can move back of it if that container should be adjusted  we can z-index property.
+->Sticky=we can use sticky to move the container to the different position but whereas the orginal space remains same and will not be occupied by any other container.
+->Absolute property by default occupies the browser as the parent and reacts the position top,left,right and bottom related to his parent.To make his parent as specific container we can use position:relative.
+
+
+DIFFERENCE BETWEEN FLEX AND GRID:
+FLEX:can align only in one direction.
+GRID:align in both row and column direction using grid template row and grid template column.
